@@ -25,6 +25,7 @@ def floodfill_dfs(sr, sc):
             if (nr,nc) in visited:
                 continue
 
+            visited.add((nr,nc))
             frontier.append((nr,nc))
 
     print "Depth:", max_frontier_size
